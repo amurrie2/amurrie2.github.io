@@ -2,52 +2,92 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Joseph Murrieta - Introduction</title>
+    <title>Joseph Murrieta | ITIS 3135 | Introduction</title>
+    <link rel="stylesheet" href="styles/introduction.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body { 
-            font-family: Arial, sans-serif; 
-            margin: 40px; 
-            background-color: #f4f4f4; 
-            color: #222;
-        }
-        .container {
-            background: #fff;
-            padding: 32px;
-            border-radius: 8px;
-            max-width: 600px;
-            margin: auto;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-        }
-        h1 {
-            color: #2a5d84;
-        }
-        img {
-            max-width: 150px;
-            border-radius: 50%;
-            display: block;
-            margin-bottom: 20px;
-        }
-        p {
-            line-height: 1.6;
-        }
-    </style>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container">
-        <img src="https://via.placeholder.com/150" alt="Joseph Murrieta Photo">
-        <h1>Welcome! I'm Joseph Murrieta</h1>
-        <p>
-            Hello! My name is Joseph Murrieta. I am a passionate student and aspiring web developer. I enjoy learning new technologies, solving problems, and building creative projects on the web.
-        </p>
-        <p>
-            In my free time, I like exploring new programming languages, playing video games, and spending time with friends and family. I am excited to continue growing my skills and contributing to the tech community.
-        </p>
-        <p>
-            Thank you for visiting my introduction page!
-        </p>
-    </div>
+    <header>
+    <h1>Joseph Murrieta — ITIS 3135</h1>
+    <p class="tagline">Building accessible, standards-compliant web pages all semester.</p>
+    <nav aria-label="Primary">
+      <ul class="nav">
+        <li><a href="./">Home</a></li>
+        <li><a href="introduction.html" aria-current="page">Introduction</a></li>
+        <li><a href="contract.html">Contract</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Introduction</h2>
+
+    <figure class="profile">
+      <img src="images/your-photo.jpg" alt="Portrait of Alberto Murrieta" />
+      <figcaption>Alberto Murrieta</figcaption>
+    </figure>
+
+    <section>
+      <h3>Personal Background</h3>
+      <p>I’m originally from California but I moved here, to North Carolina, in 2016 after joining the military.</p>
+    </section>
+
+    <section>
+      <h3>Professional Background</h3>
+      <p>N/A</p>
+    </section>
+
+    <section>
+      <h3>Academic Background</h3>
+      <p>Currently pursuing my B. A. in computer science with a concentration in software engineering.</p>
+    </section>
+
+    <section>
+      <h3>Background in This Course</h3>
+      <p>I have a very basic understanding of HTML and CSS, but I am looking to deepen my knowledge and skills in front-end development.</p>
+    </section>
+
+    <section>
+      <h3>Primary Computer Platform</h3>
+      <p>Alienware Aurora 16</p>
+    </section>
+
+    <section>
+      <h3>Courses I am Taking</h3>
+      <ul>
+        <li>ITIS 3135: Front End Web App Dev</li>
+        <li>ITCS 3112: Design and Implementation of Object Oriented Systems</li>
+        <li>ITSC 3146: Intro to Operating Systems and Networks</li>
+        <li>MATH 2164: Matrices and Linear Algebra</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Funny / Interesting Item to Remember Me By</h3>
+      <p>I laugh at almost everything, sometimes in the worst moments.</p>
+    </section>
+
+    <section>
+      <h3>A Quote I Live By</h3>
+      <p>"Just because you are alive doesn't mean you are living." - Val Richards</p>
+    </section>
+  </main>
+  <footer>
+    <nav aria-label="Footer">
+      <ul class="footer-links">
+        <li><a href="https://webpages.charlotte.edu/amurrie2/itis3135/" target="_blank" rel="noopener noreferrer">Charlotte.edu (Course Site)</a></li>
+        <li><a href="https://github.com/amurrie2" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="https://amurrie2.github.io" target="_blank" rel="noopener noreferrer">GitHub.io</a></li>
+        <li><a href="https://www.freecodecamp.org/joseph_murr" target="_blank" rel="noopener noreferrer">freeCodeCamp</a></li>
+        <li><a href="https://www.codecademy.com/profiles/amurrie2" target="_blank" rel="noopener noreferrer">Codecademy</a></li>
+        <li><a href="contract.html">Course Contract</a></li>
+        <li><a href="#" aria-label="Accumulus">Accumulus</a></li>
+      </ul>
+    </nav>
+    <p>Page built by <a href="https://murrietasoftware.com" target="_blank" rel="noopener noreferrer">Murrieta Software</a> © <span id="year"></span></p>
+  </footer>
 </body>
 </html>
 
