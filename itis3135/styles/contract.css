@@ -22,7 +22,7 @@ header nav li, footer li {
 display: inline;
 }
 header nav li::after, footer li::after {
-content: " || ";
+content: " | ";
 }
 header nav li:last-child::after, footer li:last-child::after {
 content: "";

@@ -22,7 +22,7 @@ header nav li, footer li {
 display: inline;
 }
 header nav li::after, footer li::after {
-content: " || ";
+content: " | ";
 }
 header nav li:last-child::after, footer li:last-child::after {
 content: "";
@@ -42,4 +42,12 @@ color: #000000;
 h1, h2 {
 font-family: Georgia, serif;
 margin: 0.5rem 0;
+}
+.profile img {
+  box-sizing: border-box;
+  max-width: 300px;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border: 3px solid #A49665;
 }
