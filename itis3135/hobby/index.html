@@ -10,9 +10,9 @@
             background-color: #0b1a39;
             color: #f5f7fb;
             line-height: 1.6;
-            margin: 0;
+            margin: 0 auto;
             max-width: 1000px;
-            padding 0 1rem;;
+            padding: 0 1rem;
         }
 
         header {
@@ -61,7 +61,7 @@
             display: none; /* Sections are hidden by default */
         }
 
-        section.active {
+        .active {
             display: block; /* Show active section */
         }
 
@@ -213,6 +213,7 @@
                 <li><u>CSS Styling:</u> "For the styling, can you give me ideas that I can do with red, white, and blue?"</li>
                 <li><u>How to go about the JavaScript:</u> "Get me started on the JavaScript functionality for my website."</li>
                 <li><u>Debugging Help:</u> "Here is my final code. Can you help me debug it?" (I pasted my code and it helped me fix the errors I had.)</li>
+                <li><u>Validation Errors:</u> "Accumulus gave me some errors relating to my HTML, CSS, and JS, can you help me fix them?"</li>
             </ul>
         </section>
     </main>
@@ -227,22 +228,23 @@
 
             function showSection(id) {
                 // hide all sections
-                sections.forEach(section => section.classList.remove('active'));
+                sections.forEach((section) => section.classList.remove('active'));
                 // show the selected one
                 const target = document.querySelector(id);
                 if (target) target.classList.add('active');
             }
             // Add click event to each nav link
-            navLinks.forEach(link => {
-                link.addEventListener('click', e => {
+            navLinks.forEach((link) => {
+                link.addEventListener('click', (e) => {
                     e.preventDefault(); // prevent jump to anchor
                     const id = link.getAttribute('href'); // get href value
                     showSection(id); // show the corresponding section
                 });
             });
+            
             // Show the first section by default
             showSection('#who');
-        })
+        });
     </script>
 </body>
 </html>
