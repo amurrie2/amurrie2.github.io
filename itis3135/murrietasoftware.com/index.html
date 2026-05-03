@@ -4,123 +4,135 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Murrieta Software</title>
-
-  <!-- Color palette from Coolors: https://coolors.co/1b1f3b-6b7fd7-a49665-f4f4f4-005035 -->
-
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
   <style>
-    /* Base styling */
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
-      margin: 0 auto;
-      max-width: 900px;
-      width: 90%;
+      background-color: #101820;
+      color: #f4f4f4;
       line-height: 1.6;
-      background-color: #865555;
-      color: #000000;
     }
 
     header {
-      background-color: #7F0909;
-      color: #000000;
       text-align: center;
-      padding: 1.5rem 0;
+      padding: 3rem 1rem;
+      background-color: #050a0f;
     }
 
     header img {
-      height: 80px;
-      width: auto;
-      vertical-align: middle;
-      margin-right: 10px;
+      width: 100px;
+      height: auto;
     }
 
-    header h1 {
-      display: inline-block;
+    h1 {
       font-family: Georgia, serif;
-      font-size: 2rem;
-      margin: 0;
-      vertical-align: middle;
+      font-size: 2.5rem;
+      margin: 1rem 0 0.5rem;
+      color: #d6ad60;
+    }
+
+    .tagline {
+      font-size: 1.1rem;
+      color: #c9c9c9;
     }
 
     main {
+      max-width: 1000px;
+      margin: 0 auto;
       padding: 2rem;
-      background-color: #ffffff;
-      border-radius: 8px;
-      box-shadow: 0 0 8px rgba(158, 26, 26, 0.1);
     }
 
     h2 {
-      color: #005035;
-      border-bottom: 2px solid #754D2B;
-      padding-bottom: 0.5rem;
+      color: #d6ad60;
+      text-align: center;
     }
 
-    ul {
-      list-style-type: square;
-      margin-left: 1.5rem;
+    .intro {
+      text-align: center;
+      max-width: 750px;
+      margin: 0 auto 2rem;
     }
 
-    li {
-      margin-bottom: 0.5rem;
+    .services {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      list-style: none;
+      padding: 0;
+    }
+
+    .services li {
+      background-color: #1c2833;
+      padding: 1rem;
+      border-left: 4px solid #d6ad60;
+      border-radius: 6px;
+    }
+
+    .contact {
+      background-color: #1c2833;
+      padding: 1rem;
+      border-left: 4px solid #d6ad60;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    a {
+      color: #d6ad60;
     }
 
     footer {
-      background-color: #7F0909;
-      color: #000000;
       text-align: center;
-      padding: 1rem 0;
-      margin-top: 2rem;
-    }
-
-    address {
-      font-style: normal;
-      line-height: 1.5;
-      margin-top: 1rem;
+      padding: 1rem;
+      background-color: #050a0f;
+      color: #c9c9c9;
     }
   </style>
 </head>
-
 <body>
   <header>
-    <img src="images/mastodon.jpg" alt="Murrieta Software logo featuring mastodon">
+    <img src="../images/murrietamastodon.png" alt="Murrieta Software mastodon logo">
     <h1>Murrieta Software</h1>
+    <p class="tagline">Clean code. Strong design. Reliable results.</p>
   </header>
 
   <main>
-    <h2>Murrieta Software Services</h2>
+    <h2>Software Solutions for Small Businesses</h2>
 
-    <p>
-      At Murrieta Software, we bring creative and technical expertise together to deliver exceptional websites, 
-      applications, and digital experiences. Our mission is to design reliable, user-friendly solutions that help 
-      small businesses grow in a connected world.
+    <p class="intro">
+      Murrieta Software builds clean, responsive, and user-friendly websites for small businesses that need a professional online presence without unnecessary complexity.
     </p>
 
-    <ul>
-      <li>Custom web design tailored to your brand</li>
-      <li>Responsive, mobile-first layouts</li>
-      <li>Search engine optimization (SEO) integration</li>
-      <li>Fast and secure hosting setup</li>
-      <li>Database-driven web applications</li>
-      <li>Ongoing maintenance and support</li>
+    <ul class="services">
+      <li>Custom website design</li>
+      <li>Mobile-friendly layouts</li>
+      <li>Business landing pages</li>
+      <li>Website redesigns</li>
+      <li>Basic search engine optimization</li>
+      <li>Contact forms and user features</li>
       <li>Accessibility-focused development</li>
-      <li>Creative UI/UX strategy</li>
+      <li>Ongoing website maintenance</li>
     </ul>
-
-    <p>
-      We’re passionate about helping clients achieve a professional web presence that reflects their goals and identity. 
-      Let’s bring your vision to life.
+    
+    <p class="intro">
+      We focus on practical web solutions that are easy to use, easy to maintain, and built around each client's goals.
     </p>
 
-    <address>
-      <strong>Contact Us:</strong><br>
-      Murrieta Software<br>
-      Fake Address<br>
-      <a href="mailto:info@murrietasoftware.com">info@murrietasoftware.com</a><br>
-      +1 (123) 456-7890
-    </address>
+    <section class="contact">
+      <h2>Contact Us</h2>
+      <address>
+        Murrieta Software<br>
+        Fake Address<br>
+        Murrieta, CA 92562<br>
+        <a href="mailto:info@murrietasoftware.com">info@murrietasoftware.com</a><br>
+        +1 (123) 234-5678
+      </address>
+    </section>
   </main>
 
   <footer>
-    <p>© 2025 Murrieta Software – “Code. Design. Deliver.”</p>
+    <p>Page created by Murrieta Software &copy; 2026</p>
   </footer>
+
 </body>
 </html>
