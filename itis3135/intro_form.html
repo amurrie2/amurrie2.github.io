@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction Form</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <script src="scripts/intro_form.js" defer></script>
+</head>
+<body>
+    <div data-include="components/header.html"></div>
+
+    <main>
+        <h2>Introduction Form</h2>
+
+        <form id="intro-form">
+
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" required>
+
+            <label for="middleName">Middle Name:</label>
+            <input type="text" id="middleName" required>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" required>
+
+            <label for="nickname">Nickname:</label>
+            <input type="text" id="nickname">
+
+            <label for="mascot">Mascot:</label>
+            <input type="text" id="mascot" required>
+
+            <label for="image">Upload Image:</label>
+            <input type="file" id="image" accept="image/*" required>
+
+            <label for="caption">Image Caption:</label>
+            <input type="text" id="caption" required>
+
+            <label for="personalBackground">Personal Background:</label>
+            <textarea id="personalBackground" required></textarea>
+
+            <label for="professionalBackground">Professional Background:</label>
+            <textarea id="professionalBackground" required></textarea>
+
+            <label for="academicBackground">Academic Background:</label>
+            <textarea id="academicBackground" required></textarea>
+
+            <label for="webdev">Web Development Background:</label>
+            <textarea id="webdev" required></textarea>
+
+            <label for="platform">Primary Work Computer & Location Plan:</label>
+            <textarea id="platform" required></textarea>
+
+            <label for="funny">Funny Thing (optional):</label>
+            <textarea id="funny"></textarea>
+
+            <label for="anything">Anything Else You'd Like to Share (optional):</label>
+            <textarea id="anything"></textarea>
+
+            <label for="quote">Favorite Quote:</label>
+            <textarea id="quote" required></textarea>
+
+        <h3>Courses</h3>
+
+        <div id="courses-container">
+            <div class="course">
+                <input type="text" placeholder="Course Name" required>
+                <input type="text" placeholder="Reason for taking this course" required>
+            </div>
+
+            <div class="course">
+                <input type="text" placeholder="Course Name" required>
+                <input type="text" placeholder="Reason for taking this course" required>
+            </div>
+        </div>
+
+        <button type="button" id="addCourseBtn">Add Course</button>
+        <button type="button" id="clearCoursesBtn">Clear Courses</button>
+
+        <br><br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        </form>
+    </main>
+
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>
